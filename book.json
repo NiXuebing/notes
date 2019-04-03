@@ -19,8 +19,7 @@
         "-highlight",
         "url-embed",
         "page-footer-ex",
-        "anchor-navigation-ex",
-        "copy-code-button"
+        "anchor-navigation-ex"
     ],
     "pluginsConfig": {
         "theme-default": {
