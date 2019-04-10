@@ -30,3 +30,8 @@ finalize 被设计为在对象被垃圾收集前调用。现在已经不推荐�
 
 ![mark](http://pic-cloud.ice-leaf.top/pic-cloud/20190408/z307wVVfMJP4.png?imageslim)
 
+## int 和 Integer
+Java 5 中新增了静态工厂方法 valueOf，利用一个值缓存机子，-128 ~ 127。
+
+自动装箱、拆箱，算是一种语法糖，发生在编译阶段，生成的字节码是一致的。
+
