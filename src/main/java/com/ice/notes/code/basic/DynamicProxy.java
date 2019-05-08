@@ -7,13 +7,8 @@ import org.springframework.cglib.proxy.MethodProxy;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
 
 public class DynamicProxy {
-
-
-
 
     public static void main(String[] args) {
         HelloImpl hello = new HelloImpl();
@@ -67,6 +62,7 @@ class Panda {
         System.out.println("The panda is eating");
     }
 }
+
 class CglibProxy implements MethodInterceptor {
     private Object target;
 
