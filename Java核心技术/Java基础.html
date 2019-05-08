@@ -1,0 +1,329 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Java 基础 · 学习笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Ace">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../数据结构与算法/复杂度分析.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Java 核心技术</li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="Java基础.html">
+            
+                <a href="Java基础.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    Java 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">数据结构与算法</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../数据结构与算法/复杂度分析.html">
+            
+                <a href="../数据结构与算法/复杂度分析.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    复杂度分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../数据结构与算法/数组与链表.html">
+            
+                <a href="../数据结构与算法/数组与链表.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    数组与链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Java 基础</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#java-&#x57FA;&#x7840;"><b> </b>Java &#x57FA;&#x7840;</a></li><ul><li><span class="title-icon "></span><a href="#exception-&#x548C;-error-&#x7684;&#x533A;&#x522B;"><b>1. </b>Exception &#x548C; Error &#x7684;&#x533A;&#x522B;</a></li><li><span class="title-icon "></span><a href="#final&#x3001;finally&#x3001;finalize"><b>2. </b>final&#x3001;finally&#x3001;finalize</a></li><li><span class="title-icon "></span><a href="#&#x5F3A;&#x5F15;&#x7528;&#x3001;&#x8F6F;&#x5F15;&#x7528;&#x3001;&#x5F31;&#x5F15;&#x7528;&#x3001;&#x5E7B;&#x60F3;&#x5F15;&#x7528;"><b>3. </b>&#x5F3A;&#x5F15;&#x7528;&#x3001;&#x8F6F;&#x5F15;&#x7528;&#x3001;&#x5F31;&#x5F15;&#x7528;&#x3001;&#x5E7B;&#x60F3;&#x5F15;&#x7528;</a></li><li><span class="title-icon "></span><a href="#int-&#x548C;-integer"><b>4. </b>int &#x548C; Integer</a></li></ul></ul></div><a href="#java-&#x57FA;&#x7840;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="java-&#x57FA;&#x7840;"><a name="java-&#x57FA;&#x7840;" class="anchor-navigation-ex-anchor" href="#java-&#x57FA;&#x7840;"><i class="fa fa-link" aria-hidden="true"></i></a> Java &#x57FA;&#x7840;</h1>
+<h2 id="exception-&#x548C;-error-&#x7684;&#x533A;&#x522B;"><a name="exception-&#x548C;-error-&#x7684;&#x533A;&#x522B;" class="anchor-navigation-ex-anchor" href="#exception-&#x548C;-error-&#x7684;&#x533A;&#x522B;"><i class="fa fa-link" aria-hidden="true"></i></a>1. Exception &#x548C; Error &#x7684;&#x533A;&#x522B;</h2>
+<p>&#x90FD;&#x7EE7;&#x627F;&#x4E86; Throwable &#x7C7B;&#xFF0C;&#x53EF;&#x4EE5;&#x88AB;&#x629B;&#x51FA;&#xFF08;throw&#xFF09;&#x548C;&#x6355;&#x83B7;&#xFF08;catch&#xFF09;&#x3002;<br>Exception &#x662F;&#x7A0B;&#x5E8F;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x9884;&#x6599;&#x7684;&#x610F;&#x5916;&#x60C5;&#x51B5;&#xFF0C;&#x53EF;&#x80FD;&#x5E76;&#x4E14;&#x5E94;&#x8BE5;&#x88AB;&#x6355;&#x83B7;&#xFF0C;&#x8FDB;&#x884C;&#x76F8;&#x5E94;&#x5904;&#x7406;&#x3002;<br>Error &#x662F;&#x6307;&#x6B63;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E0D;&#x5927;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x4FBF;&#x4E8E;&#x4E5F;&#x4E0D;&#x9700;&#x8981;&#x88AB;&#x6355;&#x83B7;&#x3002;  </p>
+<p><img src="http://pic-cloud.ice-leaf.top/pic-cloud/20190408/DVGUuTweBbS6.png?imageslim" alt="mark"></p>
+<p><strong>&#x5C3D;&#x91CF;&#x4E0D;&#x7528;&#x6355;&#x83B7;&#x7C7B;&#x4F3C; Exception &#x8FD9;&#x6837;&#x7684;&#x901A;&#x7528;&#x5F02;&#x5E38;&#xFF0C;&#x800C;&#x662F;&#x5E94;&#x8BE5;&#x6355;&#x83B7;&#x7279;&#x5B9A;&#x5F02;&#x5E38;&#x3002;</strong><br><strong>&#x4E0D;&#x8981;&#x751F;&#x541E;&#x5F02;&#x5E38;&#x3002;</strong></p>
+<h2 id="final&#x3001;finally&#x3001;finalize"><a name="final&#x3001;finally&#x3001;finalize" class="anchor-navigation-ex-anchor" href="#final&#x3001;finally&#x3001;finalize"><i class="fa fa-link" aria-hidden="true"></i></a>2. final&#x3001;finally&#x3001;finalize</h2>
+<p>final &#x4E0D;&#x7B49;&#x540C;&#x4E8E; immutable&#xFF0C;<code>final List<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>String</span><span class="token punctuation">&gt;</span></span> strList = new ArrayList&lt;&gt;()</code> final &#x53EA;&#x80FD;&#x7EA6;&#x675F; strList &#x8FD9;&#x4E2A;&#x5F15;&#x7528;&#x4E0D;&#x53EF;&#x4EE5;&#x88AB;&#x8D4B;&#x503C;&#xFF0C;&#x4F46;&#x662F; strList &#x5BF9;&#x8C61;&#x884C;&#x4E3A;&#x4E0D;&#x88AB; final &#x5F71;&#x54CD;&#xFF0C;&#x6DFB;&#x52A0;&#x5143;&#x7D20;&#x7B49;&#x64CD;&#x4F5C;&#x662F;&#x5B8C;&#x5168;&#x6B63;&#x5E38;&#x7684;&#x3002;   </p>
+<p>&#x9700;&#x8981;&#x5173;&#x95ED;&#x7684;&#x8FDE;&#x63A5;&#x7B49;&#x8D44;&#x6E90;&#xFF0C;&#x66F4;&#x63A8;&#x8350;&#x4F7F;&#x7528; Java 7 &#x4E2D;&#x6DFB;&#x52A0;&#x7684; try-with-resources &#x8BED;&#x53E5;&#xFF0C;&#x901A;&#x5E38; Java &#x5E73;&#x53F0;&#x80FD;&#x591F;&#x66F4;&#x597D;&#x5730;&#x5904;&#x7406;&#x5F02;&#x5E38;&#x60C5;&#x51B5;&#xFF0C;&#x7F16;&#x7801;&#x91CF;&#x4E5F;&#x8981;&#x5C11;&#x5F88;&#x591A;&#x3002;</p>
+<p>finalize &#x88AB;&#x8BBE;&#x8BA1;&#x4E3A;&#x5728;&#x5BF9;&#x8C61;&#x88AB;&#x5783;&#x573E;&#x6536;&#x96C6;&#x524D;&#x8C03;&#x7528;&#x3002;&#x73B0;&#x5728;&#x5DF2;&#x7ECF;&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#xFF0C;&#x5E76;&#x4E14;&#x5728; JDK 9 &#x5F00;&#x59CB;&#x88AB;&#x6807;&#x8BB0;&#x4E3A; deprecated&#x3002;</p>
+<h2 id="&#x5F3A;&#x5F15;&#x7528;&#x3001;&#x8F6F;&#x5F15;&#x7528;&#x3001;&#x5F31;&#x5F15;&#x7528;&#x3001;&#x5E7B;&#x60F3;&#x5F15;&#x7528;"><a name="&#x5F3A;&#x5F15;&#x7528;&#x3001;&#x8F6F;&#x5F15;&#x7528;&#x3001;&#x5F31;&#x5F15;&#x7528;&#x3001;&#x5E7B;&#x60F3;&#x5F15;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x5F3A;&#x5F15;&#x7528;&#x3001;&#x8F6F;&#x5F15;&#x7528;&#x3001;&#x5F31;&#x5F15;&#x7528;&#x3001;&#x5E7B;&#x60F3;&#x5F15;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x5F3A;&#x5F15;&#x7528;&#x3001;&#x8F6F;&#x5F15;&#x7528;&#x3001;&#x5F31;&#x5F15;&#x7528;&#x3001;&#x5E7B;&#x60F3;&#x5F15;&#x7528;</h2>
+<p>&#x4E0D;&#x540C;&#x7684;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#xFF0C;&#x4E3B;&#x8981;&#x4F53;&#x73B0;&#x7684;&#x662F;<strong>&#x5BF9;&#x8C61;&#x4E0D;&#x540C;&#x7684;&#x53EF;&#x8FBE;&#x6027;&#x72B6;&#x6001;&#x548C;&#x5BF9;&#x5783;&#x573E;&#x6536;&#x96C6;&#x7684;&#x5F71;&#x54CD;</strong>&#x3002;</p>
+<p>&#x5F3A;&#x5F15;&#x7528;&#xFF1A;&#x666E;&#x901A;&#x5BF9;&#x8C61;&#x5F15;&#x7528;&#xFF0C;&#x53EA;&#x6709;&#x8D85;&#x8FC7;&#x4E86;&#x5F15;&#x7528;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x6216;&#x8005;&#x663E;&#x793A;&#x5730;&#x5C06;&#x76F8;&#x5E94;&#x7684;&#x5F3A;&#x5F15;&#x7528;&#x8D4B;&#x503C;&#x4E3A; null &#xFF0C;&#x5C31;&#x662F;&#x53EF;&#x4EE5;&#x88AB;&#x5783;&#x573E;&#x6536;&#x96C6;&#x4E86;&#x3002;</p>
+<p>&#x8F6F;&#x5F15;&#x7528;&#xFF1A;&#x53EF;&#x4EE5;&#x8BA9;&#x5BF9;&#x8C61;&#x8C41;&#x514D;&#x4E00;&#x4E9B;&#x5783;&#x573E;&#x56DE;&#x6536;&#xFF0C;&#x53EA;&#x6709;&#x5F53; JVM &#x8BA4;&#x4E3A;&#x5185;&#x5B58;&#x4E0D;&#x8DB3;&#x65F6;&#xFF0C;&#x624D;&#x4F1A;&#x53BB;&#x8BD5;&#x56FE;&#x56DE;&#x6536;&#x8F6F;&#x5F15;&#x7528;&#x6307;&#x5411;&#x7684;&#x5BF9;&#x8C61;&#x3002;JVM &#x4F1A;&#x786E;&#x4FDD;&#x5728;&#x629B;&#x51FA; OutOfMemoryError &#x4E4B;&#x524D;&#xFF0C;&#x6E05;&#x7406;&#x8F6F;&#x5F15;&#x7528;&#x6307;&#x5411;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x53EF;&#x7528;&#x4E8E;&#x5B9E;&#x73B0;&#x5185;&#x5B58;&#x654F;&#x611F;&#x7684;&#x7F13;&#x5B58;&#x3002;</p>
+<p>&#x5F31;&#x5F15;&#x7528;&#xFF1A;&#x4E0D;&#x80FD;&#x4F7F;&#x5BF9;&#x8C61;&#x8C41;&#x514D;&#x5783;&#x573E;&#x6536;&#x96C6;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x6784;&#x5EFA;&#x4E00;&#x79CD;&#x6CA1;&#x6709;&#x7279;&#x5B9A;&#x7EA6;&#x675F;&#x7684;&#x5173;&#x7CFB;&#x3002;</p>
+<p>&#x5E7B;&#x60F3;&#x5F15;&#x7528;&#xFF1A;&#x63D0;&#x4F9B;&#x4E00;&#x79CD;&#x786E;&#x4FDD;&#x5BF9;&#x8C61;&#x88AB; finalize &#x4EE5;&#x540E;&#xFF0C;&#x505A;&#x67D0;&#x4E9B;&#x4E8B;&#x60C5;&#x7684;&#x673A;&#x5236;&#x3002;</p>
+<p><img src="http://pic-cloud.ice-leaf.top/pic-cloud/20190408/z307wVVfMJP4.png?imageslim" alt="mark"></p>
+<h2 id="int-&#x548C;-integer"><a name="int-&#x548C;-integer" class="anchor-navigation-ex-anchor" href="#int-&#x548C;-integer"><i class="fa fa-link" aria-hidden="true"></i></a>4. int &#x548C; Integer</h2>
+<p>Java 5 &#x4E2D;&#x65B0;&#x589E;&#x4E86;&#x9759;&#x6001;&#x5DE5;&#x5382;&#x65B9;&#x6CD5; valueOf&#xFF0C;&#x5229;&#x7528;&#x4E00;&#x4E2A;&#x503C;&#x7F13;&#x5B58;&#x673A;&#x5B50;&#xFF0C;-128 ~ 127&#x3002;</p>
+<p>&#x81EA;&#x52A8;&#x88C5;&#x7BB1;&#x3001;&#x62C6;&#x7BB1;&#xFF0C;&#x7B97;&#x662F;&#x4E00;&#x79CD;&#x8BED;&#x6CD5;&#x7CD6;&#xFF0C;&#x53D1;&#x751F;&#x5728;&#x7F16;&#x8BD1;&#x9636;&#x6BB5;&#xFF0C;&#x751F;&#x6210;&#x7684;&#x5B57;&#x8282;&#x7801;&#x662F;&#x4E00;&#x81F4;&#x7684;&#x3002;</p>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> By Ace </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E;&#xFF1A; 2019-05-08 15:32:01 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../数据结构与算法/复杂度分析.html" class="navigation navigation-next " aria-label="Next page: 复杂度分析">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Java 基础","level":"2.1","depth":1,"next":{"title":"复杂度分析","level":"3.1","depth":1,"path":"数据结构与算法/复杂度分析.md","ref":"数据结构与算法/复杂度分析.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","include-codeblock","mathjax","splitter","ace","-lunr","-search","search-pro","collapsible-menu","-livereload","prism","-highlight","url-embed","page-footer-ex","anchor-navigation-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"collapsible-menu":{},"ace":{},"page-footer-ex":{"copyright":"By Ace","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"此页面修订于："},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"url-embed":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"Ace","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"学习笔记","gitbook":"*"},"file":{"path":"Java核心技术/Java基础.md","mtime":"2019-05-08T07:32:01.832Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-08T07:41:18.346Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

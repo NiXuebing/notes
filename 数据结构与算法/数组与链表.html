@@ -1,0 +1,314 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>数组与链表 · 学习笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Ace">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="复杂度分析.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Java 核心技术</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../Java核心技术/Java基础.html">
+            
+                <a href="../Java核心技术/Java基础.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    Java 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">数据结构与算法</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="复杂度分析.html">
+            
+                <a href="复杂度分析.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    复杂度分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.2" data-path="数组与链表.html">
+            
+                <a href="数组与链表.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    数组与链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >数组与链表</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x6570;&#x7EC4;&#x4E0E;&#x94FE;&#x8868;"><b> </b>&#x6570;&#x7EC4;&#x4E0E;&#x94FE;&#x8868;</a></li></ul></div><a href="#&#x6570;&#x7EC4;&#x4E0E;&#x94FE;&#x8868;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x6570;&#x7EC4;&#x4E0E;&#x94FE;&#x8868;"><a name="&#x6570;&#x7EC4;&#x4E0E;&#x94FE;&#x8868;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x7EC4;&#x4E0E;&#x94FE;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x6570;&#x7EC4;&#x4E0E;&#x94FE;&#x8868;</h1>
+<p><img src="http://pic-cloud.ice-leaf.top/pic-cloud/20190403/JOK5l4q9jjsw.png?imageslim" alt="mark"></p>
+<p><img src="http://pic-cloud.ice-leaf.top/pic-cloud/20190403/3f5YqGaJ3UTG.png?imageslim" alt="mark"></p>
+<p>&#x5199;&#x94FE;&#x8868;&#x4EE3;&#x7801;&#xFF1A;
+&#x5C06;&#x67D0;&#x4E2A;&#x53D8;&#x91CF;&#x8D4B;&#x503C;&#x7ED9;&#x6307;&#x9488;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;&#x5C06;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x7684;&#x5730;&#x5740;&#x8D4B;&#x503C;&#x7ED9;&#x6307;&#x9488;&#xFF0C;&#x6216;&#x8005;&#x53CD;&#x8FC7;&#x6765;&#x8BF4;&#xFF0C;&#x6307;&#x9488;&#x4E2D;&#x5B58;&#x50A8;&#x4E86;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x7684;&#x5185;&#x5B58;&#x5730;&#x5740;&#xFF0C;&#x6307;&#x5411;&#x4E86;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x901A;&#x8FC7;&#x6307;&#x9488;&#x5C31;&#x80FD;&#x627E;&#x5230;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x3002;</p>
+<ol>
+<li>&#x5229;&#x7528;&#x54E8;&#x5175;&#x7B80;&#x5316;&#x5B9E;&#x73B0;&#x96BE;&#x5EA6;</li>
+<li>&#x91CD;&#x70B9;&#x7559;&#x610F;&#x8FB9;&#x754C;&#x6761;&#x4EF6;&#x5904;&#x7406;<br>&#x5982;&#x679C;&#x94FE;&#x8868;&#x4E3A;&#x7A7A;&#x65F6;<br>&#x5982;&#x679C;&#x94FE;&#x8868;&#x53EA;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x65F6;<br>&#x5982;&#x679C;&#x94FE;&#x8868;&#x53EA;&#x5305;&#x542B;&#x4E24;&#x4E2A;&#x8282;&#x70B9;&#x65F6;<br>&#x4EE3;&#x7801;&#x903B;&#x8F91;&#x5728;&#x5904;&#x7406;&#x5934;&#x8282;&#x70B9;&#x548C;&#x5C3E;&#x7ED3;&#x70B9;&#x7684;&#x65F6;&#x5019;</li>
+<li>&#x4E3E;&#x4F8B;&#x753B;&#x56FE;&#xFF0C;&#x8F85;&#x52A9;&#x601D;&#x8003;</li>
+</ol>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> By Ace </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E;&#xFF1A; 2019-05-08 15:32:01 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="复杂度分析.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 复杂度分析">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"数组与链表","level":"3.2","depth":1,"previous":{"title":"复杂度分析","level":"3.1","depth":1,"path":"数据结构与算法/复杂度分析.md","ref":"数据结构与算法/复杂度分析.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","include-codeblock","mathjax","splitter","ace","-lunr","-search","search-pro","collapsible-menu","-livereload","prism","-highlight","url-embed","page-footer-ex","anchor-navigation-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"collapsible-menu":{},"ace":{},"page-footer-ex":{"copyright":"By Ace","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"此页面修订于："},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"url-embed":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"Ace","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"学习笔记","gitbook":"*"},"file":{"path":"数据结构与算法/数组与链表.md","mtime":"2019-05-08T07:32:01.848Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-08T07:41:18.346Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
