@@ -21,35 +21,38 @@ package com.ice.notes.code.dubbo.impl;
 
 import com.ice.notes.code.dubbo.api.CallbackListener;
 import com.ice.notes.code.dubbo.api.GreetingService;
+import org.apache.dubbo.config.annotation.Method;
 import org.apache.dubbo.config.annotation.Service;
 import org.apache.dubbo.rpc.RpcContext;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Service(version = "1.0.0")
 //@Service(version = "1.0.0", cache = "lru")
-public class AnnotatedGreetingService implements GreetingService {
+public class AnnotatedGreetingServiceImpl implements GreetingService {
 
     private final Map<String, CallbackListener> listeners = new ConcurrentHashMap<>();
 
-    public AnnotatedGreetingService() {
-        Thread t = new Thread(new Runnable() {
-            public void run() {
-                while(true) {
-                    try {
-                        for(Map.Entry<String, CallbackListener> entry : listeners.entrySet()){
-                            try {
-                                entry.getValue().changed(getChanged(entry.getKey()));
-                            } catch (Throwable t) {
-                                listeners.remove(entry.getKey());
-                            }
+    public AnnotatedGreetingServiceImpl() {
+        Thread t = new Thread(() -> {
+            while(true) {
+                try {
+                    for(Map.Entry<String, CallbackListener> entry : listeners.entrySet()){
+                        try {
+                            entry.getValue().changed(getChanged(entry.getKey()));
+                        } catch (Throwable t1) {
+                            listeners.remove(entry.getKey());
                         }
-                        Thread.sleep(5000); // 定时触发变更通知
-                    } catch (Throwable t) { // 防御容错
-                        t.printStackTrace();
                     }
+                    // 定时触发变更通知
+                    Thread.sleep(2000);
+                } catch (Throwable t1) {
+                    // 防御容错
+                    t1.printStackTrace();
                 }
             }
         });
@@ -86,4 +89,14 @@ public class AnnotatedGreetingService implements GreetingService {
         });
     }
 
+    @Override
+    public void addListener(String key, CallbackListener listener) {
+        // 发送变更通知
+        listeners.put(key, listener);
+        //listener.changed(getChanged(key));
+    }
+
+    private String getChanged(String key) {
+        return "Changed: " + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
+    }
 }

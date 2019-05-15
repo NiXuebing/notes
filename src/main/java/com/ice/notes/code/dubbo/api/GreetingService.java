@@ -19,8 +19,15 @@
 
 package com.ice.notes.code.dubbo.api;
 
+import java.util.concurrent.CompletableFuture;
+
 public interface GreetingService {
 
     String sayHello(String name);
 
+
+    CompletableFuture<String> aSyncSayHello(String name);
+
+
+    void addListener(String key, CallbackListener listener);
 }
