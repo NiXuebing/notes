@@ -14,3 +14,4 @@
 
 ## 运维
 * [Nacos](运维/nacos.md)
+* [SpringBootAdmin](运维/springboot-admin.md)
