@@ -1,0 +1,469 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Nacos · 学习笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Ace">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="springboot-admin.html" />
+    
+    
+    <link rel="prev" href="../数据库/数据库安装.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Java 核心技术</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../Java核心技术/Java基础.html">
+            
+                <a href="../Java核心技术/Java基础.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    Java 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">数据结构与算法</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../数据结构与算法/复杂度分析.html">
+            
+                <a href="../数据结构与算法/复杂度分析.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    复杂度分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../数据结构与算法/数组与链表.html">
+            
+                <a href="../数据结构与算法/数组与链表.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    数组与链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">MySql</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../数据库/数据库安装.html">
+            
+                <a href="../数据库/数据库安装.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">运维</li>
+        
+        
+    
+        <li class="chapter active" data-level="5.1" data-path="nacos.html">
+            
+                <a href="nacos.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    Nacos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="springboot-admin.html">
+            
+                <a href="springboot-admin.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    SpringBootAdmin
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Nacos</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#nacos"><b> </b>Nacos</a></li><ul><li><span class="title-icon "></span><a href="#nacos-&#x96C6;&#x7FA4;&#x5B89;&#x88C5;"><b>1. </b>Nacos &#x96C6;&#x7FA4;&#x5B89;&#x88C5;</a></li><ul><li><span class="title-icon "></span><a href="#github&#x4E0B;&#x8F7D;"><b>1.1. </b>Github&#x4E0B;&#x8F7D;</a></li><li><span class="title-icon "></span><a href="#&#x89E3;&#x538B;&#x5B89;&#x88C5;"><b>1.2. </b>&#x89E3;&#x538B;&#x5B89;&#x88C5;</a></li><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;&#x96C6;&#x7FA4;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><b>1.3. </b>&#x914D;&#x7F6E;&#x96C6;&#x7FA4;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;mysql&#x6570;&#x636E;&#x5E93;"><b>1.4. </b>&#x914D;&#x7F6E;mysql&#x6570;&#x636E;&#x5E93;</a></li><li><span class="title-icon "></span><a href="#applicationproperties-&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;&#x94FE;&#x63A5;"><b>1.5. </b>application.properties &#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;&#x94FE;&#x63A5;</a></li><li><span class="title-icon "></span><a href="#&#x542F;&#x52A8;&#x670D;&#x52A1;"><b>1.6. </b>&#x542F;&#x52A8;&#x670D;&#x52A1;</a></li><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;nginx"><b>1.7. </b>&#x914D;&#x7F6E;nginx</a></li></ul></ul></ul></div><a href="#nacos" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="nacos"><a name="nacos" class="anchor-navigation-ex-anchor" href="#nacos"><i class="fa fa-link" aria-hidden="true"></i></a> Nacos</h1>
+<h2 id="nacos-&#x96C6;&#x7FA4;&#x5B89;&#x88C5;"><a name="nacos-&#x96C6;&#x7FA4;&#x5B89;&#x88C5;" class="anchor-navigation-ex-anchor" href="#nacos-&#x96C6;&#x7FA4;&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>1. Nacos &#x96C6;&#x7FA4;&#x5B89;&#x88C5;</h2>
+<h3 id="github&#x4E0B;&#x8F7D;"><a name="github&#x4E0B;&#x8F7D;" class="anchor-navigation-ex-anchor" href="#github&#x4E0B;&#x8F7D;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Github&#x4E0B;&#x8F7D;</h3>
+<p><code>wget https://github.com/alibaba/nacos/releases/download/1.0.0/nacos-server-1.0.0.tar.gz</code></p>
+<h3 id="&#x89E3;&#x538B;&#x5B89;&#x88C5;"><a name="&#x89E3;&#x538B;&#x5B89;&#x88C5;" class="anchor-navigation-ex-anchor" href="#&#x89E3;&#x538B;&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x89E3;&#x538B;&#x5B89;&#x88C5;</h3>
+<pre class="language-"><code>tar zxvf nacos-server-1.0.0.tar.gz
+cp -R nacos /usr/local/server/nacos-server-1.0.0
+</code></pre><h3 id="&#x914D;&#x7F6E;&#x96C6;&#x7FA4;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><a name="&#x914D;&#x7F6E;&#x96C6;&#x7FA4;&#x914D;&#x7F6E;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;&#x96C6;&#x7FA4;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x914D;&#x7F6E;&#x96C6;&#x7FA4;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h3>
+<pre class="language-"><code>vim conf/cluster.conf
+
+#it is ip
+#example
+172.18.1.152:8848
+172.18.1.153:8848
+172.18.1.154:8848
+</code></pre><h3 id="&#x914D;&#x7F6E;mysql&#x6570;&#x636E;&#x5E93;"><a name="&#x914D;&#x7F6E;mysql&#x6570;&#x636E;&#x5E93;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;mysql&#x6570;&#x636E;&#x5E93;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x914D;&#x7F6E;mysql&#x6570;&#x636E;&#x5E93;</h3>
+<pre class="language-"><code>create database nacos_config default character set utf8 collate utf8_bin;
+
+&#x6267;&#x884C;sql&#x811A;&#x672C;
+
+grant all on nacos_config.* to &apos;nacos&apos;@&apos;%&apos; identified by &apos;nacos2019&apos;;
+
+flush privileges;
+</code></pre><h3 id="applicationproperties-&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;&#x94FE;&#x63A5;"><a name="applicationproperties-&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;&#x94FE;&#x63A5;" class="anchor-navigation-ex-anchor" href="#applicationproperties-&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;&#x94FE;&#x63A5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. application.properties &#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;&#x94FE;&#x63A5;</h3>
+<pre class="language-"><code>vi application.properties
+
+# spring
+
+server.contextPath=/
+server.servlet.contextPath=/
+server.port=8848
+
+db.num=1
+db.url.0=jdbc:mysql://172.18.156.16:4306/nacos_config?characterEncoding=utf8&amp;connectTimeout=1000&amp;socketTimeout=3000&amp;autoReconnect=true
+db.user=nacos
+db.password=nacos2019
+
+
+nacos.cmdb.dumpTaskInterval=3600
+nacos.cmdb.eventTaskInterval=10
+nacos.cmdb.labelTaskInterval=300
+nacos.cmdb.loadDataAtStart=false
+
+
+# metrics for prometheus
+#management.endpoints.web.exposure.include=*
+
+# metrics for elastic search
+management.metrics.export.elastic.enabled=false
+#management.metrics.export.elastic.host=http://localhost:9200
+
+# metrics for influx
+management.metrics.export.influx.enabled=false
+#management.metrics.export.influx.db=springboot
+#management.metrics.export.influx.uri=http://localhost:8086
+#management.metrics.export.influx.auto-create-db=true
+#management.metrics.export.influx.consistency=one
+#management.metrics.export.influx.compressed=true
+
+server.tomcat.accesslog.enabled=true
+server.tomcat.accesslog.pattern=%h %l %u %t &quot;%r&quot; %s %b %D %{User-Agent}i
+# default current work dir
+server.tomcat.basedir=
+
+## spring security config
+### turn off security
+#spring.security.enabled=false
+#management.security=false
+#security.basic.enabled=false
+#nacos.security.ignore.urls=/**
+
+nacos.security.ignore.urls=/,/**/*.css,/**/*.js,/**/*.html,/**/*.map,/**/*.svg,/**/*.png,/**/*.ico,/console-fe/public/**,/v1/auth/login,/v1/console/health/**,/v1/cs/**,/v1/ns/**,/v1/cmdb/**,/actuator/**,/v1/con
+sole/server/**
+
+nacos.naming.distro.taskDispatchThreadCount=1
+nacos.naming.distro.taskDispatchPeriod=200
+nacos.naming.distro.batchSyncKeyCount=1000
+nacos.naming.distro.initDataRatio=0.9
+nacos.naming.distro.syncRetryDelay=5000
+nacos.naming.data.warmup=true
+nacos.naming.expireInstance=true
+</code></pre><h3 id="&#x542F;&#x52A8;&#x670D;&#x52A1;"><a name="&#x542F;&#x52A8;&#x670D;&#x52A1;" class="anchor-navigation-ex-anchor" href="#&#x542F;&#x52A8;&#x670D;&#x52A1;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. &#x542F;&#x52A8;&#x670D;&#x52A1;</h3>
+<p><code>bin/startup.sh</code></p>
+<h3 id="&#x914D;&#x7F6E;nginx"><a name="&#x914D;&#x7F6E;nginx" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;nginx"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. &#x914D;&#x7F6E;nginx</h3>
+<pre class="language-"><code>    upstream nacos-server {
+        server 172.18.1.152:8848;
+        server 172.18.1.153:8848;
+        server 172.18.1.154:8848;
+    }
+    server {
+        listen    80;
+        server_name  nacos.ice-leaf.com;
+
+        location / {
+            proxy_pass http://nacos-server;
+            proxy_set_header  Host  $host;
+            proxy_set_header  X-Real-IP  $remote_addr;
+            proxy_set_header  X-Forwared-For $proxy_add_x_forwarded_for;
+        }
+    }
+</code></pre><footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> By Ace </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E;&#xFF1A; 2019-05-16 10:10:38 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../数据库/数据库安装.html" class="navigation navigation-prev " aria-label="Previous page: 数据库">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="springboot-admin.html" class="navigation navigation-next " aria-label="Next page: SpringBootAdmin">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Nacos","level":"5.1","depth":1,"next":{"title":"SpringBootAdmin","level":"5.2","depth":1,"path":"运维/springboot-admin.md","ref":"运维/springboot-admin.md","articles":[]},"previous":{"title":"数据库","level":"4.1","depth":1,"path":"数据库/数据库安装.md","ref":"数据库/数据库安装.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","include-codeblock","mathjax","splitter","ace","-lunr","-search","search-pro","collapsible-menu","-livereload","prism","-highlight","url-embed","page-footer-ex","anchor-navigation-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"collapsible-menu":{},"ace":{},"page-footer-ex":{"copyright":"By Ace","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"此页面修订于："},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"url-embed":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"Ace","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"学习笔记","gitbook":"*"},"file":{"path":"运维/nacos.md","mtime":"2019-05-16T02:10:38.283Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-16T02:19:57.991Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

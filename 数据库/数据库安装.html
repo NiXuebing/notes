@@ -65,6 +65,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="../运维/nacos.html" />
+    
     
     <link rel="prev" href="../数据结构与算法/数组与链表.html" />
     
@@ -193,6 +195,43 @@
     
 
     
+        
+        <li class="header">运维</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../运维/nacos.html">
+            
+                <a href="../运维/nacos.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    Nacos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../运维/springboot-admin.html">
+            
+                <a href="../运维/springboot-admin.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    SpringBootAdmin
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
 
     <li class="divider"></li>
 
@@ -236,95 +275,79 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#linux-&#x5B89;&#x88C5;-mysql"><b> </b>Linux &#x5B89;&#x88C5; MySQL</a></li><ul><li><span class="title-icon "></span><a href="#&#x5B98;&#x7F51;&#x4E0B;&#x8F7D;"><b>1. </b>&#x5B98;&#x7F51;&#x4E0B;&#x8F7D;</a></li><li><span class="title-icon "></span><a href="#&#x5B89;&#x88C5;"><b>2. </b>&#x5B89;&#x88C5;</a></li></ul><li><span class="title-icon "></span><a href="#include-all-files-from-the-config-directory"><b> </b>include all files from the config directory</a></li></ul></div><a href="#linux-&#x5B89;&#x88C5;-mysql" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="linux-&#x5B89;&#x88C5;-mysql"><a name="linux-&#x5B89;&#x88C5;-mysql" class="anchor-navigation-ex-anchor" href="#linux-&#x5B89;&#x88C5;-mysql"><i class="fa fa-link" aria-hidden="true"></i></a> Linux &#x5B89;&#x88C5; MySQL</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#linux-&#x5B89;&#x88C5;-mysql"><b> </b>Linux &#x5B89;&#x88C5; MySQL</a></li><ul><li><span class="title-icon "></span><a href="#&#x5B98;&#x7F51;&#x4E0B;&#x8F7D;"><b>1. </b>&#x5B98;&#x7F51;&#x4E0B;&#x8F7D;</a></li><ul><li><span class="title-icon "></span><a href="#&#x767B;&#x5F55;&#x5B98;&#x7F51;"><b>1.1. </b>&#x767B;&#x5F55;&#x5B98;&#x7F51;</a></li><li><span class="title-icon "></span><a href="#&#x9009;&#x62E9;linux&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF0C;5726&#x7248;&#x672C;"><b>1.2. </b>&#x9009;&#x62E9;Linux&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF0C;5.7.26&#x7248;&#x672C;</a></li><li><span class="title-icon "></span><a href="#&#x4E0B;&#x8F7D;64&#x4F4D;&#x5B89;&#x88C5;&#x5305;"><b>1.3. </b>&#x4E0B;&#x8F7D;64&#x4F4D;&#x5B89;&#x88C5;&#x5305;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5B89;&#x88C5;"><b>2. </b>&#x5B89;&#x88C5;</a></li><ul><li><span class="title-icon "></span><a href="#&#x89E3;&#x538B;&#x79FB;&#x52A8;&#x5230;&#x76F8;&#x5E94;&#x8DEF;&#x5F84;"><b>2.1. </b>&#x89E3;&#x538B;&#x79FB;&#x52A8;&#x5230;&#x76F8;&#x5E94;&#x8DEF;&#x5F84;</a></li><li><span class="title-icon "></span><a href="#&#x6DFB;&#x52A0;mysql&#x7528;&#x6237;&#x548C;&#x7528;&#x6237;&#x7EC4;"><b>2.2. </b>&#x6DFB;&#x52A0;mysql&#x7528;&#x6237;&#x548C;&#x7528;&#x6237;&#x7EC4;</a></li><li><span class="title-icon "></span><a href="#&#x66F4;&#x65B0;mysql&#x76EE;&#x5F55;&#x6743;&#x9650;"><b>2.3. </b>&#x66F4;&#x65B0;mysql&#x76EE;&#x5F55;&#x6743;&#x9650;</a></li><li><span class="title-icon "></span><a href="#&#x521B;&#x5EFA;mysql&#x6570;&#x636E;&#x5B58;&#x50A8;&#x76EE;&#x5F55;"><b>2.4. </b>&#x521B;&#x5EFA;mysql&#x6570;&#x636E;&#x5B58;&#x50A8;&#x76EE;&#x5F55;</a></li><li><span class="title-icon "></span><a href="#&#x4FEE;&#x6539;etcmycnf"><b>2.5. </b>&#x4FEE;&#x6539;/etc/my.cnf</a></li><li><span class="title-icon "></span><a href="#&#x6570;&#x636E;&#x5E93;&#x521D;&#x59CB;&#x5316;"><b>2.6. </b>&#x6570;&#x636E;&#x5E93;&#x521D;&#x59CB;&#x5316;</a></li><li><span class="title-icon "></span><a href="#&#x521D;&#x59CB;&#x5316;&#x65E5;&#x5FD7;&#x76EE;&#x5F55;&#x548C;pid&#x76EE;&#x5F55;"><b>2.7. </b>&#x521D;&#x59CB;&#x5316;&#x65E5;&#x5FD7;&#x76EE;&#x5F55;&#x548C;pid&#x76EE;&#x5F55;</a></li><li><span class="title-icon "></span><a href="#&#x542F;&#x52A8;mysql"><b>2.8. </b>&#x542F;&#x52A8;mysql</a></li><li><span class="title-icon "></span><a href="#&#x6DFB;&#x52A0;service&#x670D;&#x52A1;&#x548C;&#x5F00;&#x673A;&#x81EA;&#x542F;&#x52A8;"><b>2.9. </b>&#x6DFB;&#x52A0;service&#x670D;&#x52A1;&#x548C;&#x5F00;&#x673A;&#x81EA;&#x542F;&#x52A8;</a></li><li><span class="title-icon "></span><a href="#&#x6DFB;&#x52A0;&#x7CFB;&#x7EDF;&#x8DEF;&#x5F84;"><b>2.10. </b>&#x6DFB;&#x52A0;&#x7CFB;&#x7EDF;&#x8DEF;&#x5F84;</a></li></ul><li><span class="title-icon "></span><a href="#&#x8FD0;&#x884C;"><b>3. </b>&#x8FD0;&#x884C;</a></li><ul><li><span class="title-icon "></span><a href="#&#x767B;&#x5F55;mysql"><b>3.1. </b>&#x767B;&#x5F55;mysql</a></li><li><span class="title-icon "></span><a href="#&#x91CD;&#x7F6E;&#x5BC6;&#x7801;"><b>3.2. </b>&#x91CD;&#x7F6E;&#x5BC6;&#x7801;</a></li><li><span class="title-icon "></span><a href="#&#x589E;&#x52A0;&#x8FDC;&#x7A0B;&#x767B;&#x5F55;&#x6743;&#x9650;"><b>3.3. </b>&#x589E;&#x52A0;&#x8FDC;&#x7A0B;&#x767B;&#x5F55;&#x6743;&#x9650;</a></li></ul></ul></ul></div><a href="#linux-&#x5B89;&#x88C5;-mysql" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="linux-&#x5B89;&#x88C5;-mysql"><a name="linux-&#x5B89;&#x88C5;-mysql" class="anchor-navigation-ex-anchor" href="#linux-&#x5B89;&#x88C5;-mysql"><i class="fa fa-link" aria-hidden="true"></i></a> Linux &#x5B89;&#x88C5; MySQL</h1>
 <h2 id="&#x5B98;&#x7F51;&#x4E0B;&#x8F7D;"><a name="&#x5B98;&#x7F51;&#x4E0B;&#x8F7D;" class="anchor-navigation-ex-anchor" href="#&#x5B98;&#x7F51;&#x4E0B;&#x8F7D;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x5B98;&#x7F51;&#x4E0B;&#x8F7D;</h2>
-<ol>
-<li><p>&#x767B;&#x5F55;&#x5B98;&#x7F51;<br><a href="https://dev.mysql.com/downloads/mysql/" target="_blank">https://dev.mysql.com/downloads/mysql/</a></p>
-</li>
-<li><p>&#x9009;&#x62E9;Linux&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF0C;5.7.26&#x7248;&#x672C;<br><img src="http://pic-cloud.ice-leaf.top/pic-cloud/20190515/QysAGfagmDWw.png?imageslim" alt="mark"></p>
-</li>
-<li><p>&#x4E0B;&#x8F7D;64&#x4F4D;&#x5B89;&#x88C5;&#x5305;<br><code>wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.26-linux-glibc2.12-x86_64.tar.gz</code></p>
-</li>
-</ol>
+<h3 id="&#x767B;&#x5F55;&#x5B98;&#x7F51;"><a name="&#x767B;&#x5F55;&#x5B98;&#x7F51;" class="anchor-navigation-ex-anchor" href="#&#x767B;&#x5F55;&#x5B98;&#x7F51;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x767B;&#x5F55;&#x5B98;&#x7F51;</h3>
+<p><a href="https://dev.mysql.com/downloads/mysql/" target="_blank">https://dev.mysql.com/downloads/mysql/</a></p>
+<h3 id="&#x9009;&#x62E9;linux&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF0C;5726&#x7248;&#x672C;"><a name="&#x9009;&#x62E9;linux&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF0C;5726&#x7248;&#x672C;" class="anchor-navigation-ex-anchor" href="#&#x9009;&#x62E9;linux&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF0C;5726&#x7248;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x9009;&#x62E9;Linux&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF0C;5.7.26&#x7248;&#x672C;</h3>
+<p><img src="http://pic-cloud.ice-leaf.top/pic-cloud/20190515/QysAGfagmDWw.png?imageslim" alt="mark"></p>
+<h3 id="&#x4E0B;&#x8F7D;64&#x4F4D;&#x5B89;&#x88C5;&#x5305;"><a name="&#x4E0B;&#x8F7D;64&#x4F4D;&#x5B89;&#x88C5;&#x5305;" class="anchor-navigation-ex-anchor" href="#&#x4E0B;&#x8F7D;64&#x4F4D;&#x5B89;&#x88C5;&#x5305;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x4E0B;&#x8F7D;64&#x4F4D;&#x5B89;&#x88C5;&#x5305;</h3>
+<p><code>wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.26-linux-glibc2.12-x86_64.tar.gz</code></p>
 <h2 id="&#x5B89;&#x88C5;"><a name="&#x5B89;&#x88C5;" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x5B89;&#x88C5;</h2>
-<ol>
-<li><p>&#x89E3;&#x538B;&#x79FB;&#x52A8;&#x5230;&#x76F8;&#x5E94;&#x8DEF;&#x5F84;<br><code>tar zxvf mysql-5.7.26-linux-glibc2.12-x86_64.tar.gz</code><br><code>mv mysql-5.7.26-linux-glibc2.12-x86_64 /usr/local/server/mysql-5.7.26</code></p>
-</li>
-<li><p>&#x6DFB;&#x52A0;mysql&#x7528;&#x6237;&#x548C;&#x7528;&#x6237;&#x7EC4;<br><code>groupadd mysql</code><br><code>useradd -r -g mysql mysql</code></p>
-</li>
-<li><p>&#x66F4;&#x65B0;mysql&#x76EE;&#x5F55;&#x6743;&#x9650;<br><code>cd /usr/local/server/mysql-5.7.26</code><br><code>chown -R mysql. ./</code></p>
-</li>
-<li><p>&#x521B;&#x5EFA;mysql&#x6570;&#x636E;&#x5B58;&#x50A8;&#x76EE;&#x5F55;<br><code>mkdir /data/local/mysql</code><br><code>mkdir /data/local/mysql/database</code><br><code>chown -R mysql. /data/local/mysql/</code>  </p>
-</li>
-<li><p>&#x4FEE;&#x6539;my.cnf<br><code>vi /etc/my.cnf</code><br>```
-[mysqld]
+<h3 id="&#x89E3;&#x538B;&#x79FB;&#x52A8;&#x5230;&#x76F8;&#x5E94;&#x8DEF;&#x5F84;"><a name="&#x89E3;&#x538B;&#x79FB;&#x52A8;&#x5230;&#x76F8;&#x5E94;&#x8DEF;&#x5F84;" class="anchor-navigation-ex-anchor" href="#&#x89E3;&#x538B;&#x79FB;&#x52A8;&#x5230;&#x76F8;&#x5E94;&#x8DEF;&#x5F84;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. &#x89E3;&#x538B;&#x79FB;&#x52A8;&#x5230;&#x76F8;&#x5E94;&#x8DEF;&#x5F84;</h3>
+<p><code>tar zxvf mysql-5.7.26-linux-glibc2.12-x86_64.tar.gz</code><br><code>mv mysql-5.7.26-linux-glibc2.12-x86_64 /usr/local/server/mysql-5.7.26</code></p>
+<h3 id="&#x6DFB;&#x52A0;mysql&#x7528;&#x6237;&#x548C;&#x7528;&#x6237;&#x7EC4;"><a name="&#x6DFB;&#x52A0;mysql&#x7528;&#x6237;&#x548C;&#x7528;&#x6237;&#x7EC4;" class="anchor-navigation-ex-anchor" href="#&#x6DFB;&#x52A0;mysql&#x7528;&#x6237;&#x548C;&#x7528;&#x6237;&#x7EC4;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. &#x6DFB;&#x52A0;mysql&#x7528;&#x6237;&#x548C;&#x7528;&#x6237;&#x7EC4;</h3>
+<p><code>groupadd mysql</code><br><code>useradd -r -g mysql mysql</code></p>
+<h3 id="&#x66F4;&#x65B0;mysql&#x76EE;&#x5F55;&#x6743;&#x9650;"><a name="&#x66F4;&#x65B0;mysql&#x76EE;&#x5F55;&#x6743;&#x9650;" class="anchor-navigation-ex-anchor" href="#&#x66F4;&#x65B0;mysql&#x76EE;&#x5F55;&#x6743;&#x9650;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. &#x66F4;&#x65B0;mysql&#x76EE;&#x5F55;&#x6743;&#x9650;</h3>
+<p><code>cd /usr/local/server/mysql-5.7.26</code><br><code>chown -R mysql. ./</code></p>
+<h3 id="&#x521B;&#x5EFA;mysql&#x6570;&#x636E;&#x5B58;&#x50A8;&#x76EE;&#x5F55;"><a name="&#x521B;&#x5EFA;mysql&#x6570;&#x636E;&#x5B58;&#x50A8;&#x76EE;&#x5F55;" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;mysql&#x6570;&#x636E;&#x5B58;&#x50A8;&#x76EE;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>2.4. &#x521B;&#x5EFA;mysql&#x6570;&#x636E;&#x5B58;&#x50A8;&#x76EE;&#x5F55;</h3>
+<p><code>mkdir /data/local/mysql</code><br><code>mkdir /data/local/mysql/database</code><br><code>chown -R mysql. /data/local/mysql/</code>  </p>
+<h3 id="&#x4FEE;&#x6539;etcmycnf"><a name="&#x4FEE;&#x6539;etcmycnf" class="anchor-navigation-ex-anchor" href="#&#x4FEE;&#x6539;etcmycnf"><i class="fa fa-link" aria-hidden="true"></i></a>2.5. &#x4FEE;&#x6539;/etc/my.cnf</h3>
+<pre class="language-"><code>[mysqld]
 basedir=/usr/local/server/mysql-5.7.26
 datadir=/data/local/mysql/database
 socket=/data/local/mysql/mysql.sock
 log_bin=/data/local/mysql/mysql-bin
-port=4306</p>
-</li>
-</ol>
-<p>server-id=1
+port=4306
+
+server-id=1
 lower_case_table_names=1
 default-storage-engine=INNODB
 character-set-server=utf8
-collation-server=utf8_general_ci</p>
-<p>symbolic-links=0
+collation-server=utf8_general_ci
+
+symbolic-links=0
 log-error=/var/log/mysql/mysql.log
-pid-file=/var/run/mysql/mysql.pid</p>
-<p>[mysqld_safe]
+pid-file=/var/run/mysql/mysql.pid
+
+[mysqld_safe]
 log-error=/var/log/mysql/mysql.log
-pid-file=/var/run/mysql/mysql.pid</p>
-<p>#</p>
-<h1 id="include-all-files-from-the-config-directory"><a name="include-all-files-from-the-config-directory" class="anchor-navigation-ex-anchor" href="#include-all-files-from-the-config-directory"><i class="fa fa-link" aria-hidden="true"></i></a> include all files from the config directory</h1>
-<p>#
-!includedir /etc/my.cnf.d</p>
-<pre class="language-"><code>
-6. &#x6570;&#x636E;&#x5E93;&#x521D;&#x59CB;&#x5316;  
-`yum install libaio`  
-`/usr/local/server/mysql-5.7.26/bin/mysqld --initialize --user=mysql`  
+pid-file=/var/run/mysql/mysql.pid
 
-&#x6CE8;&#x610F;&#x751F;&#x6210;&#x4E34;&#x65F6;root&#x5BC6;&#x7801;  
-![mark](http://pic-cloud.ice-leaf.top/pic-cloud/20190515/MhoR7yOx8ClE.png?imageslim)
+#
+# include all files from the config directory
+#
+!includedir /etc/my.cnf.d
+</code></pre><h3 id="&#x6570;&#x636E;&#x5E93;&#x521D;&#x59CB;&#x5316;"><a name="&#x6570;&#x636E;&#x5E93;&#x521D;&#x59CB;&#x5316;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x5E93;&#x521D;&#x59CB;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>2.6. &#x6570;&#x636E;&#x5E93;&#x521D;&#x59CB;&#x5316;</h3>
+<p><code>yum install libaio</code><br><code>/usr/local/server/mysql-5.7.26/bin/mysqld --initialize --user=mysql</code>  </p>
+<p>&#x6CE8;&#x610F;&#x751F;&#x6210;&#x4E34;&#x65F6;root&#x5BC6;&#x7801;<br><img src="http://pic-cloud.ice-leaf.top/pic-cloud/20190515/MhoR7yOx8ClE.png?imageslim" alt="mark"></p>
+<h3 id="&#x521D;&#x59CB;&#x5316;&#x65E5;&#x5FD7;&#x76EE;&#x5F55;&#x548C;pid&#x76EE;&#x5F55;"><a name="&#x521D;&#x59CB;&#x5316;&#x65E5;&#x5FD7;&#x76EE;&#x5F55;&#x548C;pid&#x76EE;&#x5F55;" class="anchor-navigation-ex-anchor" href="#&#x521D;&#x59CB;&#x5316;&#x65E5;&#x5FD7;&#x76EE;&#x5F55;&#x548C;pid&#x76EE;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>2.7. &#x521D;&#x59CB;&#x5316;&#x65E5;&#x5FD7;&#x76EE;&#x5F55;&#x548C;pid&#x76EE;&#x5F55;</h3>
+<p><code>mkdir /var/log/mysql</code><br><code>chown -R mysql. /var/log/mysql</code><br><code>mkdir /var/run/mysql</code><br><code>chown -R mysql. /var/run/mysql</code>  </p>
+<h3 id="&#x542F;&#x52A8;mysql"><a name="&#x542F;&#x52A8;mysql" class="anchor-navigation-ex-anchor" href="#&#x542F;&#x52A8;mysql"><i class="fa fa-link" aria-hidden="true"></i></a>2.8. &#x542F;&#x52A8;mysql</h3>
+<p><code>/usr/local/server/mysql-5.7.26/support-files/mysql.server start</code></p>
+<h3 id="&#x6DFB;&#x52A0;service&#x670D;&#x52A1;&#x548C;&#x5F00;&#x673A;&#x81EA;&#x542F;&#x52A8;"><a name="&#x6DFB;&#x52A0;service&#x670D;&#x52A1;&#x548C;&#x5F00;&#x673A;&#x81EA;&#x542F;&#x52A8;" class="anchor-navigation-ex-anchor" href="#&#x6DFB;&#x52A0;service&#x670D;&#x52A1;&#x548C;&#x5F00;&#x673A;&#x81EA;&#x542F;&#x52A8;"><i class="fa fa-link" aria-hidden="true"></i></a>2.9. &#x6DFB;&#x52A0;service&#x670D;&#x52A1;&#x548C;&#x5F00;&#x673A;&#x81EA;&#x542F;&#x52A8;</h3>
+<p><code>cp .support-files/mysql.server /etc/init.d/mysqld</code><br><code>chkconfig --add mysqld</code><br><code>chkconfig --list</code></p>
+<h3 id="&#x6DFB;&#x52A0;&#x7CFB;&#x7EDF;&#x8DEF;&#x5F84;"><a name="&#x6DFB;&#x52A0;&#x7CFB;&#x7EDF;&#x8DEF;&#x5F84;" class="anchor-navigation-ex-anchor" href="#&#x6DFB;&#x52A0;&#x7CFB;&#x7EDF;&#x8DEF;&#x5F84;"><i class="fa fa-link" aria-hidden="true"></i></a>2.10. &#x6DFB;&#x52A0;&#x7CFB;&#x7EDF;&#x8DEF;&#x5F84;</h3>
+<pre class="language-"><code>vim /etc/profile
 
-7. &#x521D;&#x59CB;&#x5316;&#x65E5;&#x5FD7;&#x76EE;&#x5F55;&#x548C;pid&#x76EE;&#x5F55;  
-`mkdir /var/log/mysql`  
-`chown -R mysql. /var/log/mysql`  
-`mkdir /var/run/mysql`  
-`chown -R mysql. /var/run/mysql`  
+export MYSQL_HOME=/usr/local/server/mysql-5.7.26
+export PATH=$PATH:$MYSQL_HOME/bin
 
-8. &#x542F;&#x52A8;mysql  
-`/usr/local/server/mysql-5.7.26/support-files/mysql.server start`
-
-9. &#x6DFB;&#x52A0;service&#x670D;&#x52A1;&#x548C;&#x5F00;&#x673A;&#x81EA;&#x542F;&#x52A8;  
-`cp .support-files/mysql.server /etc/init.d/mysqld`  
-`chkconfig --add mysqld`  
-`chkconfig --list`
-
-10. &#x6DFB;&#x52A0;&#x7CFB;&#x7EDF;&#x8DEF;&#x5F84;
-</code></pre><p>vim /etc/profile</p>
-<p>export MYSQL_HOME=/usr/local/server/mysql-5.7.26
-export PATH=$PATH:$MYSQL_HOME/bin</p>
-<p>source /etc/profile</p>
-<pre class="language-"><code>## &#x8FD0;&#x884C;
-1. &#x767B;&#x5F55;mysql  
-![mark](http://pic-cloud.ice-leaf.top/pic-cloud/20190515/UBwT6kUPMyWW.png?imageslim)
-
-&#x5728;`/etc/my.cnf`&#x4E2D;&#x6DFB;&#x52A0;
-</code></pre><p>[client]
-socket=/data/local/mysql/mysql.sock</p>
-<pre class="language-"><code>
-2. &#x91CD;&#x7F6E;&#x5BC6;&#x7801;  
-`set password=password(&apos;&#x65B0;&#x5BC6;&#x7801;&apos;);`
-
-3. &#x589E;&#x52A0;&#x8FDC;&#x7A0B;&#x767B;&#x5F55;&#x6743;&#x9650;
-</code></pre><p>use mysql;
+source /etc/profile
+</code></pre><h2 id="&#x8FD0;&#x884C;"><a name="&#x8FD0;&#x884C;" class="anchor-navigation-ex-anchor" href="#&#x8FD0;&#x884C;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x8FD0;&#x884C;</h2>
+<h3 id="&#x767B;&#x5F55;mysql"><a name="&#x767B;&#x5F55;mysql" class="anchor-navigation-ex-anchor" href="#&#x767B;&#x5F55;mysql"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. &#x767B;&#x5F55;mysql</h3>
+<p><img src="http://pic-cloud.ice-leaf.top/pic-cloud/20190515/UBwT6kUPMyWW.png?imageslim" alt="mark"></p>
+<p>&#x5728;<code>/etc/my.cnf</code>&#x4E2D;&#x6DFB;&#x52A0;</p>
+<pre class="language-"><code>[client]
+socket=/data/local/mysql/mysql.sock
+</code></pre><h3 id="&#x91CD;&#x7F6E;&#x5BC6;&#x7801;"><a name="&#x91CD;&#x7F6E;&#x5BC6;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x91CD;&#x7F6E;&#x5BC6;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. &#x91CD;&#x7F6E;&#x5BC6;&#x7801;</h3>
+<p><code>set password=password(&apos;&#x65B0;&#x5BC6;&#x7801;&apos;);</code></p>
+<h3 id="&#x589E;&#x52A0;&#x8FDC;&#x7A0B;&#x767B;&#x5F55;&#x6743;&#x9650;"><a name="&#x589E;&#x52A0;&#x8FDC;&#x7A0B;&#x767B;&#x5F55;&#x6743;&#x9650;" class="anchor-navigation-ex-anchor" href="#&#x589E;&#x52A0;&#x8FDC;&#x7A0B;&#x767B;&#x5F55;&#x6743;&#x9650;"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. &#x589E;&#x52A0;&#x8FDC;&#x7A0B;&#x767B;&#x5F55;&#x6743;&#x9650;</h3>
+<pre class="language-"><code>use mysql;
 select user, host from user;
 update user set host=&apos;%&apos; where user=&apos;root&apos;;
 flush privileges;
-```</p>
-<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> By Ace </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E;&#xFF1A; 2019-05-15 18:05:53 </span> </footer>
+</code></pre><footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> By Ace </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E;&#xFF1A; 2019-05-16 08:50:24 </span> </footer>
                                 
                                 </section>
                             
@@ -351,10 +374,14 @@ flush privileges;
 
             
                 
-                <a href="../数据结构与算法/数组与链表.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 数组与链表">
+                <a href="../数据结构与算法/数组与链表.html" class="navigation navigation-prev " aria-label="Previous page: 数组与链表">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="../运维/nacos.html" class="navigation navigation-next " aria-label="Next page: Nacos">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -363,7 +390,7 @@ flush privileges;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"数据库","level":"4.1","depth":1,"previous":{"title":"数组与链表","level":"3.2","depth":1,"path":"数据结构与算法/数组与链表.md","ref":"数据结构与算法/数组与链表.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","include-codeblock","mathjax","splitter","ace","-lunr","-search","search-pro","collapsible-menu","-livereload","prism","-highlight","url-embed","page-footer-ex","anchor-navigation-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"collapsible-menu":{},"ace":{},"page-footer-ex":{"copyright":"By Ace","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"此页面修订于："},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"url-embed":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"Ace","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"学习笔记","gitbook":"*"},"file":{"path":"数据库/数据库安装.md","mtime":"2019-05-15T10:05:53.251Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-15T10:06:22.209Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"数据库","level":"4.1","depth":1,"next":{"title":"Nacos","level":"5.1","depth":1,"path":"运维/nacos.md","ref":"运维/nacos.md","articles":[]},"previous":{"title":"数组与链表","level":"3.2","depth":1,"path":"数据结构与算法/数组与链表.md","ref":"数据结构与算法/数组与链表.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","include-codeblock","mathjax","splitter","ace","-lunr","-search","search-pro","collapsible-menu","-livereload","prism","-highlight","url-embed","page-footer-ex","anchor-navigation-ex"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"collapsible-menu":{},"ace":{},"page-footer-ex":{"copyright":"By Ace","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"此页面修订于："},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"url-embed":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"Ace","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"学习笔记","gitbook":"*"},"file":{"path":"数据库/数据库安装.md","mtime":"2019-05-16T00:50:24.273Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-16T02:19:57.991Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
