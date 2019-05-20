@@ -13,5 +13,6 @@
 * [数据库](数据库/数据库安装.md)
 
 ## 运维
+* [Dubbo](运维/dubbo.md)
 * [Nacos](运维/nacos.md)
 * [SpringBootAdmin](运维/springboot-admin.md)
