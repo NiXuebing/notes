@@ -4,7 +4,7 @@
 ![mark](http://pic-cloud.ice-leaf.top/pic-cloud/20190516/LLf8nFdg1HNh.png?imageslim)
 ![mark](http://pic-cloud.ice-leaf.top/pic-cloud/20190516/IbIWMhjsm7P5.png?imageslim)
 
-### 修正pom.xml
+### 修正 pom.xml
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -63,7 +63,7 @@
 </project>
 ```
 
-### 添加@EnableAdminServer
+### 添加 @EnableAdminServer
 ```java
 @EnableAdminServer
 @SpringBootApplication
@@ -73,4 +73,39 @@ public class SpringbootAdminApplication {
         SpringApplication.run(SpringbootAdminApplication.class, args);
     }
 }
+```
+
+### 添加 application.yml
+```
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+```
+
+## SpringBoot Admin Client
+### 添加 pom.xml
+```
+    <!-- springboot admin client-->
+    <dependency>
+        <groupId>de.codecentric</groupId>
+        <artifactId>spring-boot-admin-starter-client</artifactId>
+        <version>2.1.4</version>
+    </dependency>
+```
+### 添加 application.yml
+```
+# springboot admin server
+spring:
+  boot:
+    admin:
+      client:
+        url: http://springboot-admin.ice-leaf.com
+        instance:
+          name: dev-soa-provider
+          service-url: 
 ```
