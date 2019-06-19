@@ -3,7 +3,7 @@ package com.ice.notes.code.concurrency;
 public class ThreadSafeSample {
     public int sharedState;
     public void nonSafeAction() {
-        while (sharedState < 100000) {
+        while (sharedState < 10000000) {
             int former = sharedState++;
             int latter = sharedState;
             if (former != latter - 1) {
