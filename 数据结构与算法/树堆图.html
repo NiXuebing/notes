@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Nacos · 学习笔记</title>
+        <title>树堆图 · 学习笔记</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -65,10 +65,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="springboot-admin.html" />
+    <link rel="next" href="../数据库/数据库安装.html" />
     
     
-    <link rel="prev" href="dubbo.html" />
+    <link rel="prev" href="查找.html" />
     
 
     </head>
@@ -192,9 +192,9 @@
         
         
     
-        <li class="chapter " data-level="3.1" data-path="../数据结构与算法/复杂度分析.html">
+        <li class="chapter " data-level="3.1" data-path="复杂度分析.html">
             
-                <a href="../数据结构与算法/复杂度分析.html">
+                <a href="复杂度分析.html">
             
                     
                         <b>3.1.</b>
@@ -207,9 +207,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../数据结构与算法/数组与链表.html">
+        <li class="chapter " data-level="3.2" data-path="数组与链表.html">
             
-                <a href="../数据结构与算法/数组与链表.html">
+                <a href="数组与链表.html">
             
                     
                         <b>3.2.</b>
@@ -222,9 +222,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="../数据结构与算法/排序.html">
+        <li class="chapter " data-level="3.3" data-path="排序.html">
             
-                <a href="../数据结构与算法/排序.html">
+                <a href="排序.html">
             
                     
                         <b>3.3.</b>
@@ -237,9 +237,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4" data-path="../数据结构与算法/查找.html">
+        <li class="chapter " data-level="3.4" data-path="查找.html">
             
-                <a href="../数据结构与算法/查找.html">
+                <a href="查找.html">
             
                     
                         <b>3.4.</b>
@@ -252,9 +252,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5" data-path="../数据结构与算法/树堆图.html">
+        <li class="chapter active" data-level="3.5" data-path="树堆图.html">
             
-                <a href="../数据结构与算法/树堆图.html">
+                <a href="树堆图.html">
             
                     
                         <b>3.5.</b>
@@ -362,9 +362,9 @@
         
         
     
-        <li class="chapter " data-level="5.1" data-path="dubbo.html">
+        <li class="chapter " data-level="5.1" data-path="../运维/dubbo.html">
             
-                <a href="dubbo.html">
+                <a href="../运维/dubbo.html">
             
                     
                         <b>5.1.</b>
@@ -377,9 +377,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="5.2" data-path="nacos.html">
+        <li class="chapter " data-level="5.2" data-path="../运维/nacos.html">
             
-                <a href="nacos.html">
+                <a href="../运维/nacos.html">
             
                     
                         <b>5.2.</b>
@@ -392,9 +392,9 @@
             
         </li>
     
-        <li class="chapter " data-level="5.3" data-path="springboot-admin.html">
+        <li class="chapter " data-level="5.3" data-path="../运维/springboot-admin.html">
             
-                <a href="springboot-admin.html">
+                <a href="../运维/springboot-admin.html">
             
                     
                         <b>5.3.</b>
@@ -437,7 +437,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Nacos</a>
+        <a href=".." >树堆图</a>
     </h1>
 </div>
 
@@ -452,107 +452,30 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#nacos"><b> </b>Nacos</a></li><ul><li><span class="title-icon "></span><a href="#nacos-&#x96C6;&#x7FA4;&#x5B89;&#x88C5;"><b>1. </b>Nacos &#x96C6;&#x7FA4;&#x5B89;&#x88C5;</a></li><ul><li><span class="title-icon "></span><a href="#github&#x4E0B;&#x8F7D;"><b>1.1. </b>Github&#x4E0B;&#x8F7D;</a></li><li><span class="title-icon "></span><a href="#&#x89E3;&#x538B;&#x5B89;&#x88C5;"><b>1.2. </b>&#x89E3;&#x538B;&#x5B89;&#x88C5;</a></li><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;&#x96C6;&#x7FA4;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><b>1.3. </b>&#x914D;&#x7F6E;&#x96C6;&#x7FA4;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;mysql&#x6570;&#x636E;&#x5E93;"><b>1.4. </b>&#x914D;&#x7F6E;mysql&#x6570;&#x636E;&#x5E93;</a></li><li><span class="title-icon "></span><a href="#applicationproperties-&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;&#x94FE;&#x63A5;"><b>1.5. </b>application.properties &#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;&#x94FE;&#x63A5;</a></li><li><span class="title-icon "></span><a href="#&#x542F;&#x52A8;&#x670D;&#x52A1;"><b>1.6. </b>&#x542F;&#x52A8;&#x670D;&#x52A1;</a></li><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;nginx"><b>1.7. </b>&#x914D;&#x7F6E;nginx</a></li></ul></ul></ul></div><a href="#nacos" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="nacos"><a name="nacos" class="anchor-navigation-ex-anchor" href="#nacos"><i class="fa fa-link" aria-hidden="true"></i></a> Nacos</h1>
-<h2 id="nacos-&#x96C6;&#x7FA4;&#x5B89;&#x88C5;"><a name="nacos-&#x96C6;&#x7FA4;&#x5B89;&#x88C5;" class="anchor-navigation-ex-anchor" href="#nacos-&#x96C6;&#x7FA4;&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>1. Nacos &#x96C6;&#x7FA4;&#x5B89;&#x88C5;</h2>
-<h3 id="github&#x4E0B;&#x8F7D;"><a name="github&#x4E0B;&#x8F7D;" class="anchor-navigation-ex-anchor" href="#github&#x4E0B;&#x8F7D;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Github&#x4E0B;&#x8F7D;</h3>
-<p><code>wget https://github.com/alibaba/nacos/releases/download/1.0.0/nacos-server-1.0.0.tar.gz</code></p>
-<h3 id="&#x89E3;&#x538B;&#x5B89;&#x88C5;"><a name="&#x89E3;&#x538B;&#x5B89;&#x88C5;" class="anchor-navigation-ex-anchor" href="#&#x89E3;&#x538B;&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x89E3;&#x538B;&#x5B89;&#x88C5;</h3>
-<pre class="language-"><code>tar zxvf nacos-server-1.0.0.tar.gz
-cp -R nacos /usr/local/server/nacos-server-1.0.0
-</code></pre><h3 id="&#x914D;&#x7F6E;&#x96C6;&#x7FA4;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><a name="&#x914D;&#x7F6E;&#x96C6;&#x7FA4;&#x914D;&#x7F6E;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;&#x96C6;&#x7FA4;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x914D;&#x7F6E;&#x96C6;&#x7FA4;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h3>
-<pre class="language-"><code>vim conf/cluster.conf
-
-#it is ip
-#example
-172.18.1.152:8848
-172.18.1.153:8848
-172.18.1.154:8848
-</code></pre><h3 id="&#x914D;&#x7F6E;mysql&#x6570;&#x636E;&#x5E93;"><a name="&#x914D;&#x7F6E;mysql&#x6570;&#x636E;&#x5E93;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;mysql&#x6570;&#x636E;&#x5E93;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x914D;&#x7F6E;mysql&#x6570;&#x636E;&#x5E93;</h3>
-<pre class="language-"><code>create database nacos_config default character set utf8 collate utf8_bin;
-
-&#x6267;&#x884C;sql&#x811A;&#x672C;
-
-grant all on nacos_config.* to &apos;nacos&apos;@&apos;%&apos; identified by &apos;nacos2019&apos;;
-
-flush privileges;
-</code></pre><h3 id="applicationproperties-&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;&#x94FE;&#x63A5;"><a name="applicationproperties-&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;&#x94FE;&#x63A5;" class="anchor-navigation-ex-anchor" href="#applicationproperties-&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;&#x94FE;&#x63A5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. application.properties &#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;&#x94FE;&#x63A5;</h3>
-<pre class="language-"><code>vi application.properties
-
-# spring
-
-server.contextPath=/
-server.servlet.contextPath=/
-server.port=8848
-
-db.num=1
-db.url.0=jdbc:mysql://172.18.156.16:4306/nacos_config?characterEncoding=utf8&amp;connectTimeout=1000&amp;socketTimeout=3000&amp;autoReconnect=true
-db.user=nacos
-db.password=nacos2019
-
-
-nacos.cmdb.dumpTaskInterval=3600
-nacos.cmdb.eventTaskInterval=10
-nacos.cmdb.labelTaskInterval=300
-nacos.cmdb.loadDataAtStart=false
-
-
-# metrics for prometheus
-#management.endpoints.web.exposure.include=*
-
-# metrics for elastic search
-management.metrics.export.elastic.enabled=false
-#management.metrics.export.elastic.host=http://localhost:9200
-
-# metrics for influx
-management.metrics.export.influx.enabled=false
-#management.metrics.export.influx.db=springboot
-#management.metrics.export.influx.uri=http://localhost:8086
-#management.metrics.export.influx.auto-create-db=true
-#management.metrics.export.influx.consistency=one
-#management.metrics.export.influx.compressed=true
-
-server.tomcat.accesslog.enabled=true
-server.tomcat.accesslog.pattern=%h %l %u %t &quot;%r&quot; %s %b %D %{User-Agent}i
-# default current work dir
-server.tomcat.basedir=
-
-## spring security config
-### turn off security
-#spring.security.enabled=false
-#management.security=false
-#security.basic.enabled=false
-#nacos.security.ignore.urls=/**
-
-nacos.security.ignore.urls=/,/**/*.css,/**/*.js,/**/*.html,/**/*.map,/**/*.svg,/**/*.png,/**/*.ico,/console-fe/public/**,/v1/auth/login,/v1/console/health/**,/v1/cs/**,/v1/ns/**,/v1/cmdb/**,/actuator/**,/v1/con
-sole/server/**
-
-nacos.naming.distro.taskDispatchThreadCount=1
-nacos.naming.distro.taskDispatchPeriod=200
-nacos.naming.distro.batchSyncKeyCount=1000
-nacos.naming.distro.initDataRatio=0.9
-nacos.naming.distro.syncRetryDelay=5000
-nacos.naming.data.warmup=true
-nacos.naming.expireInstance=true
-</code></pre><h3 id="&#x542F;&#x52A8;&#x670D;&#x52A1;"><a name="&#x542F;&#x52A8;&#x670D;&#x52A1;" class="anchor-navigation-ex-anchor" href="#&#x542F;&#x52A8;&#x670D;&#x52A1;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. &#x542F;&#x52A8;&#x670D;&#x52A1;</h3>
-<p><code>bin/startup.sh</code></p>
-<h3 id="&#x914D;&#x7F6E;nginx"><a name="&#x914D;&#x7F6E;nginx" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;nginx"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. &#x914D;&#x7F6E;nginx</h3>
-<pre class="language-"><code>    upstream nacos-server {
-        server 172.18.1.152:8848;
-        server 172.18.1.153:8848;
-        server 172.18.1.154:8848;
-    }
-    server {
-        listen    80;
-        server_name  nacos.ice-leaf.com;
-
-        location / {
-            proxy_pass http://nacos-server;
-            proxy_set_header  Host  $host;
-            proxy_set_header  X-Real-IP  $remote_addr;
-            proxy_set_header  X-Forwared-For $proxy_add_x_forwarded_for;
-        }
-    }
-</code></pre><footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> By Ace </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E;&#xFF1A; 2019-06-19 10:37:54 </span> </footer>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x6811;&#x5806;&#x56FE;"><b> </b>&#x6811;&#x5806;&#x56FE;</a></li><ul><li><span class="title-icon "></span><a href="#&#x6811;"><b>1. </b>&#x6811;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;"><b>1.1. </b>&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;</a></li><li><span class="title-icon "></span><a href="#&#x5E73;&#x8861;&#x4E8C;&#x53C9;&#x6811;"><b>1.2. </b>&#x5E73;&#x8861;&#x4E8C;&#x53C9;&#x6811;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5806;"><b>2. </b>&#x5806;</a></li></ul></ul></div><a href="#&#x6811;&#x5806;&#x56FE;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x6811;&#x5806;&#x56FE;"><a name="&#x6811;&#x5806;&#x56FE;" class="anchor-navigation-ex-anchor" href="#&#x6811;&#x5806;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a> &#x6811;&#x5806;&#x56FE;</h1>
+<h2 id="&#x6811;"><a name="&#x6811;" class="anchor-navigation-ex-anchor" href="#&#x6811;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x6811;</h2>
+<p><img src="http://pic-cloud.ice-leaf.top/pic-cloud/20190712/xD790T6f864Q.png?imageslim" alt="mark"></p>
+<p><img src="http://pic-cloud.ice-leaf.top/pic-cloud/20190712/Mx2QlMEdnsac.png?imageslim" alt="mark"></p>
+<p><img src="http://pic-cloud.ice-leaf.top/pic-cloud/20190712/62Ugmnsgg6s6.png?imageslim" alt="mark"></p>
+<p><strong>&#x6EE1;&#x4E8C;&#x53C9;&#x6811;&#xFF1A;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x5168;&#x90FD;&#x5728;&#x6700;&#x5E95;&#x5C42;&#xFF0C;&#x9664;&#x4E86;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x4E4B;&#x5916;&#xFF0C;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x90FD;&#x6709;&#x5DE6;&#x53F3;&#x4E24;&#x4E2A;&#x5B50;&#x8282;&#x70B9;&#xFF08;2&#xFF09;&#x3002;</strong>  </p>
+<p><strong>&#x5B8C;&#x5168;&#x4E8C;&#x53C9;&#x6811;&#xFF1A;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x90FD;&#x5728;&#x6700;&#x5E95;&#x4E0B;&#x4E24;&#x5C42;&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x5C42;&#x7684;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x90FD;&#x9760;&#x5DE6;&#x6392;&#x5217;&#xFF0C;&#x5E76;&#x4E14;&#x9664;&#x4E86;&#x6700;&#x540E;&#x4E00;&#x5C42;&#xFF0C;&#x5176;&#x4ED6;&#x5C42;&#x7684;&#x8282;&#x70B9;&#x4E2A;&#x6570;&#x90FD;&#x8981;&#x8FBE;&#x5230;&#x6700;&#x5927;&#xFF08;3&#xFF09;&#x3002;</strong></p>
+<h3 id="&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;"><a name="&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;</h3>
+<p>&#x5728;&#x6811;&#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#xFF0C;&#x5176;&#x5DE6;&#x5B50;&#x6811;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x503C;&#xFF0C;&#x90FD;&#x8981;&#x5C0F;&#x4E8E;&#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x503C;&#xFF0C;&#x800C;&#x53F3;&#x5B50;&#x6811;&#x8282;&#x70B9;&#x7684;&#x503C;&#x90FD;&#x5927;&#x4E8E;&#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x503C;&#x3002;</p>
+<p><img src="http://pic-cloud.ice-leaf.top/pic-cloud/20190712/OFtWMNc8AamX.png?imageslim" alt="mark"></p>
+<h3 id="&#x5E73;&#x8861;&#x4E8C;&#x53C9;&#x6811;"><a name="&#x5E73;&#x8861;&#x4E8C;&#x53C9;&#x6811;" class="anchor-navigation-ex-anchor" href="#&#x5E73;&#x8861;&#x4E8C;&#x53C9;&#x6811;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x5E73;&#x8861;&#x4E8C;&#x53C9;&#x6811;</h3>
+<p>&#x4E25;&#x683C;&#x5B9A;&#x4E49;&#xFF1A;&#x4E8C;&#x53C9;&#x6811;&#x4E2D;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x5DE6;&#x53F3;&#x5B50;&#x6811;&#x7684;&#x9AD8;&#x5EA6;&#x76F8;&#x5DEE;&#x4E0D;&#x5927;&#x4E8E;1&#x3002;</p>
+<h4 id="&#x7EA2;&#x9ED1;&#x6811;"><a name="&#x7EA2;&#x9ED1;&#x6811;" class="anchor-navigation-ex-anchor" href="#&#x7EA2;&#x9ED1;&#x6811;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7EA2;&#x9ED1;&#x6811;</h4>
+<ul>
+<li>&#x6839;&#x8282;&#x70B9;&#x662F;&#x9ED1;&#x8272;&#x7684;&#xFF1B;</li>
+<li>&#x6BCF;&#x4E2A;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x90FD;&#x662F;&#x9ED1;&#x8272;&#x7684;&#x7A7A;&#x8282;&#x70B9;(NIL)&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x4E0D;&#x5B58;&#x50A8;&#x6570;&#x636E;&#xFF1B;</li>
+<li>&#x4EFB;&#x4F55;&#x76F8;&#x90BB;&#x7684;&#x8282;&#x70B9;&#x90FD;&#x4E0D;&#x80FD;&#x540C;&#x65F6;&#x4E3A;&#x7EA2;&#x8272;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x7EA2;&#x8272;&#x8282;&#x70B9;&#x662F;&#x88AB;&#x9ED1;&#x8272;&#x8282;&#x70B9;&#x9694;&#x5F00;&#x7684;&#xFF1B;</li>
+<li>&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#xFF0C;&#x4ECE;&#x8BE5;&#x8282;&#x70B9;&#x5230;&#x8FBE;&#x5176;&#x53EF;&#x8FBE;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x7684;&#x6240;&#x6709;&#x8DEF;&#x5F84;&#xFF0C;&#x90FD;&#x5305;&#x542B;&#x76F8;&#x540C;&#x6570;&#x76EE;&#x7684;&#x9ED1;&#x8272;&#x8282;&#x70B9;&#x3002;</li>
+</ul>
+<p><img src="http://pic-cloud.ice-leaf.top/pic-cloud/20190712/3P2h5elS8qpb.png?imageslim" alt="mark"></p>
+<h2 id="&#x5806;"><a name="&#x5806;" class="anchor-navigation-ex-anchor" href="#&#x5806;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x5806;</h2>
+<p>&#x5806;&#x662F;&#x4E00;&#x4E2A;&#x5B8C;&#x5168;&#x4E8C;&#x53C9;&#x6811;&#xFF1B;  </p>
+<p>&#x63A8;&#x4E2D;&#x6BCF;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x503C;&#x90FD;&#x5FC5;&#x987B;&#x5927;&#x4E8E;&#x7B49;&#x4E8E;&#xFF08;&#x6216;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;&#xFF09;&#x5176;&#x5B50;&#x6811;&#x4E2D;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x503C;&#x3002;</p>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> By Ace </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E;&#xFF1A; 2019-07-12 18:03:58 </span> </footer>
                                 
                                 </section>
                             
@@ -579,12 +502,12 @@ nacos.naming.expireInstance=true
 
             
                 
-                <a href="dubbo.html" class="navigation navigation-prev " aria-label="Previous page: Dubbo">
+                <a href="查找.html" class="navigation navigation-prev " aria-label="Previous page: 查找">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="springboot-admin.html" class="navigation navigation-next " aria-label="Next page: SpringBootAdmin">
+                <a href="../数据库/数据库安装.html" class="navigation navigation-next " aria-label="Next page: 数据库">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -595,7 +518,7 @@ nacos.naming.expireInstance=true
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Nacos","level":"5.2","depth":1,"next":{"title":"SpringBootAdmin","level":"5.3","depth":1,"path":"运维/springboot-admin.md","ref":"运维/springboot-admin.md","articles":[]},"previous":{"title":"Dubbo","level":"5.1","depth":1,"path":"运维/dubbo.md","ref":"运维/dubbo.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","include-codeblock","mathjax","splitter","ace","-lunr","-search","search-pro","collapsible-menu","-livereload","prism","-highlight","url-embed","page-footer-ex","anchor-navigation-ex","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"collapsible-menu":{},"ace":{},"page-footer-ex":{"copyright":"By Ace","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"此页面修订于："},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"url-embed":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"Ace","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"学习笔记","gitbook":"*"},"file":{"path":"运维/nacos.md","mtime":"2019-06-19T02:37:54.542Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-22T02:10:23.661Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"树堆图","level":"3.5","depth":1,"next":{"title":"数据库","level":"4.1","depth":1,"path":"数据库/数据库安装.md","ref":"数据库/数据库安装.md","articles":[{"title":"MySQL 常用命令","level":"4.1.1","depth":2,"path":"数据库/MySQL常用命令.md","ref":"数据库/MySQL常用命令.md","articles":[]},{"title":"MySQL 基础","level":"4.1.2","depth":2,"path":"数据库/MySQL基础.md","ref":"数据库/MySQL基础.md","articles":[]},{"title":"MySQL 事务","level":"4.1.3","depth":2,"path":"数据库/MySQL事务.md","ref":"数据库/MySQL事务.md","articles":[]},{"title":"MySQL 索引","level":"4.1.4","depth":2,"path":"数据库/MySQL索引.md","ref":"数据库/MySQL索引.md","articles":[]}]},"previous":{"title":"查找","level":"3.4","depth":1,"path":"数据结构与算法/查找.md","ref":"数据结构与算法/查找.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","include-codeblock","mathjax","splitter","ace","-lunr","-search","search-pro","collapsible-menu","-livereload","prism","-highlight","url-embed","page-footer-ex","anchor-navigation-ex","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"collapsible-menu":{},"ace":{},"page-footer-ex":{"copyright":"By Ace","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"此页面修订于："},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"url-embed":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"Ace","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"学习笔记","gitbook":"*"},"file":{"path":"数据结构与算法/树堆图.md","mtime":"2019-07-12T10:03:58.132Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-22T02:10:23.661Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
