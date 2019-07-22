@@ -17,6 +17,7 @@
 
 ## MySql
 * [数据库](数据库/数据库安装.md)
+    * [MySQL 常用命令](数据库/MySQL常用命令.md)
     * [MySQL 基础](数据库/MySQL基础.md)
     * [MySQL 事务](数据库/MySQL事务.md)
     * [MySQL 索引](数据库/MySQL索引.md)
